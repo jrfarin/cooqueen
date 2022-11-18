@@ -10,11 +10,14 @@ body a {
   text-decoration: none;
   transition: all 0.25s ease-in-out;
 }
+body a:before {
+  transition: all 0.3s ease-in-out;
+}
 
 #allRecipes header .lab-nav {
-  background-image: url("../images/bground/motif-primary.jpg");
+  background-image: url("../../assets/images/bground/motif-primary.jpg");
   background-repeat: repeat-x;
-  font-size: 13px;
+  font-size: 0.8rem;
 }
 #allRecipes header .lab-nav a, #allRecipes header .lab-nav span {
   color: rgba(0, 0, 0, 0.35);
@@ -38,8 +41,29 @@ body a {
   font-size: 0.65rem;
   letter-spacing: 5px;
 }
+#allRecipes header .main-nav .list-inline-item {
+  margin-right: 2.5rem;
+}
+#allRecipes header .main-nav .list-inline-item.active {
+  border-bottom: 3px solid #a3c0ae;
+}
 #allRecipes header .main-nav a {
+  position: relative;
   color: #3a3231;
+  font-size: 0.9rem;
+}
+#allRecipes header .main-nav a:before {
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  display: block;
+  width: 0;
+  height: 2.5px;
+  content: "";
+  background: #a3c0ae;
+}
+#allRecipes header .main-nav a:hover:before {
+  width: 100%;
 }
 #allRecipes .wrapper {
   max-width: 1080px;

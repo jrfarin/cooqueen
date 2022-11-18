@@ -1,6 +1,7 @@
 $primary-color: #f4bdaa;
 $secondary-color : #504f50;
 $enhanced-color: #f0aa91;
+$link-color: #a3c0ae;
 $bg-color: #f9f9f9;
 $text-color: #3a3231;
 
@@ -14,15 +15,18 @@ body {
         color: $primary-color;
         text-decoration: none;
         transition: all .25s ease-in-out;
+        &:before {
+            transition: all .3s ease-in-out;
+        }
     }
 }
 
 #allRecipes {
     header {
         .lab-nav {
-            background-image: url('../images/bground/motif-primary.jpg');
+            background-image: url('../../assets/images/bground/motif-primary.jpg');
             background-repeat: repeat-x;
-            font-size: 13px;
+            font-size: .8rem;
             a, span {
                 color: rgba(0, 0, 0, 0.35);           
             }
@@ -46,8 +50,31 @@ body {
             font-size: .65rem;
             letter-spacing: 5px;
         }
-        .main-nav a {
-            color: $text-color;
+        .main-nav {
+            .list-inline-item {
+                margin-right: 2.5rem;
+                &.active {
+                    border-bottom: 3px solid $link-color;
+                }
+            }
+            a {
+                position: relative;
+                color: $text-color;
+                font-size: .9rem;
+                &:before {
+                    position: absolute;
+                    bottom: -6px;
+                    left: 0;
+                    display: block;
+                    width: 0;
+                    height: 2.5px;
+                    content: "";
+                    background: $link-color;
+                }
+                &:hover:before {
+                    width:100%;
+                }
+            } 
         }
     }
     .wrapper {    
