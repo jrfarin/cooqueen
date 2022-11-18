@@ -1,5 +1,5 @@
 const mainMenu = document.getElementById('mainNavList');
-const listItems = mainMenu.getElementsByClassName("list-sinline-item");
+const listItems = mainMenu.getElementsByClassName("list-inline-item");
 
 for (let i = 0; i < listItems.length; i++) {
     listItems[i].addEventListener("click", function() {
