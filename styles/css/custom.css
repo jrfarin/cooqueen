@@ -119,6 +119,58 @@ body a:before {
 .cooqueen .main-box .recipe-info {
   font-size: 0.85rem;
 }
+.cooqueen .main-box .ingredients-box {
+  background: #e6ebe8;
+}
+.cooqueen .main-box .ingredients-box h4 {
+  color: #a3c0ae;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.25rem;
+}
+.cooqueen .main-box .ingredients-box .ingredients span {
+  display: block;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+.cooqueen .main-box .ingredients-box .ingredients ul {
+  list-style: none;
+  column-count: 2;
+}
+.cooqueen .main-box .ingredients-box .ingredients ul li {
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+.cooqueen .main-box .ingredients-box .ingredients ul li:before {
+  position: relative;
+  top: -2px;
+  content: " - ";
+}
+.cooqueen .main-box .elaboration-box p {
+  font-size: 0.8rem;
+  text-align: justify;
+  margin-bottom: 0.75rem;
+}
+.cooqueen .main-box .elaboration-box p span {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #f0aa91;
+  padding-right: 0.25rem;
+}
+.cooqueen footer {
+  height: 50px;
+  background-image: url("../../assets/images/bground/motif-primary.jpg");
+  background-repeat: repeat-x;
+  font-size: 0.8rem;
+}
+.cooqueen footer .brand {
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.25rem;
+  color: #f0aa91;
+  padding-top: 1px;
+}
 
 @media only screen and (min-width: 320px) and (max-width: 1023px) {
   .masonry {

@@ -8,3 +8,7 @@ for (let i = 0; i < listItems.length; i++) {
         this.className += " active";
     });
 }
+
+let date =  new Date().getFullYear();
+const year = document.querySelector('.year');
+year.innerText = date;
