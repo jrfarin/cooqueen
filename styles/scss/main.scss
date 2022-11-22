@@ -5,6 +5,10 @@ $link-color: #a3c0ae;
 $bg-color: #f9f9f9;
 $text-color: #3a3231;
 
+$fs-07: .7rem;
+$fs-08: .8rem;
+$fs-09: .9rem;
+
 body {
     color: $text-color;
     font-family: 'Montserrat', sans-serif;
@@ -21,23 +25,19 @@ body {
     }
 }
 
-#allRecipes {
+.cooqueen {
     header {
         .lab-nav {
             background-image: url('../../assets/images/bground/motif-primary.jpg');
             background-repeat: repeat-x;
-            font-size: .8rem;
+            height: 50px;
+            font-size: $fs-08;
             a, span {
                 color: rgba(0, 0, 0, 0.35);           
             }
-            .lab-article-link {
-                padding: 1rem .25rem;
-                text-decoration: none;
-                &:hover {
-                    background: rgba(0, 0, 0, 0.1);
-                    color: rgba(0, 0, 0, 0.5);
-                }
-            }
+        }
+        .btn-cooqueen {
+            background-color: $primary-color;
         }
         .title {
             font-family: 'Bebas Neue', cursive;
@@ -60,7 +60,7 @@ body {
             a {
                 position: relative;
                 color: $text-color;
-                font-size: .9rem;
+                font-size: $fs-09;
                 &:before {
                     position: absolute;
                     bottom: -6px;
@@ -114,8 +114,90 @@ body {
                 }
             }
         }
+    }
+    .main-box {
+        max-width: 90%;
+        .separator {
+            background-image: url('../../assets/images/bground/motif-primary.jpg');
+            background-repeat: repeat-x;
+            height: 40px;
+        }
+        .recipe-title {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 2rem;
+            color: $link-color;
+        }
+        .recipe-info {
+            font-size: .85rem;
+        }
+        .ingredients-box {
+            background: #e6ebe8;
+            h4 {
+                color: $link-color;
+                font-family: 'Bebas Neue', cursive;
+                font-size: 1.25rem;
+            }
+            .ingredients {
+                span {
+                    display: block;
+                    margin-bottom: .75rem;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: $fs-08;
+                }
+                ul {
+                    list-style: none;
+                    column-count: 2;
+                    li {
+                        display: block;
+                        text-transform: uppercase;
+                        font-size: $fs-07;
+                        &:before {
+                            position: relative;
+                            top: -2px;
+                            content: " - ";
+                        }
+
+                    }
+                }
+            }
+
+           
+        }
+        .elaboration-box {
+            p {
+                font-size: $fs-08;
+                text-align: justify;
+                margin-bottom: .75rem;
+                span {
+                    font-size: $fs-09;
+                    font-weight: bold;
+                    color: $enhanced-color;
+                    padding-right: .25rem;
+                }
+            }
+        }
+    }
+    footer {
+        height: 50px;
+        background-image: url('../../assets/images/bground/motif-primary.jpg');
+        background-repeat: repeat-x;
+        font-size: $fs-08;
+        .brand {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 1.25rem;
+            color: $enhanced-color;
+            padding-top: 1px;
+        }
     }  
 }
+
+
+
+
+
+
+
 
 @media only screen and (min-width: 320px) and (max-width: 1023px) {
     .masonry {
