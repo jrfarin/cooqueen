@@ -35,10 +35,22 @@ body {
             a, span {
                 color: rgba(0, 0, 0, 0.35);           
             }
+            .btn.btn-cooqueen {
+                background-color: $primary-color !important;
+                border: 1px solid #fff;
+                &:active {
+                    background-color: inherit;
+                    border: none;
+                }
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+            p {
+                text-shadow: 1px 1px 1px $secondary-color;
+            }
         }
-        .btn-cooqueen {
-            background-color: $primary-color;
-        }
+        
         .title {
             font-family: 'Bebas Neue', cursive;
             font-size: 5rem;
@@ -115,7 +127,7 @@ body {
             }
         }
     }
-    .main-box {
+    .recipe-main-box {
         max-width: 90%;
         .separator {
             background-image: url('../../assets/images/bground/motif-primary.jpg');
@@ -191,9 +203,6 @@ body {
         }
     }  
 }
-
-
-
 
 
 

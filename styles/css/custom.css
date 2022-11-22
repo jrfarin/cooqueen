@@ -23,8 +23,19 @@ body a:before {
 .cooqueen header .lab-nav a, .cooqueen header .lab-nav span {
   color: rgba(0, 0, 0, 0.35);
 }
-.cooqueen header .btn-cooqueen {
-  background-color: #f4bdaa;
+.cooqueen header .lab-nav .btn.btn-cooqueen {
+  background-color: #f4bdaa !important;
+  border: 1px solid #fff;
+}
+.cooqueen header .lab-nav .btn.btn-cooqueen:active {
+  background-color: inherit;
+  border: none;
+}
+.cooqueen header .lab-nav .btn.btn-cooqueen:hover {
+  opacity: 0.5;
+}
+.cooqueen header .lab-nav p {
+  text-shadow: 1px 1px 1px #504f50;
 }
 .cooqueen header .title {
   font-family: "Bebas Neue", cursive;
@@ -99,57 +110,57 @@ body a:before {
 .cooqueen .wrapper .masonry .brick:hover .backside {
   opacity: 1;
 }
-.cooqueen .main-box {
+.cooqueen .recipe-main-box {
   max-width: 90%;
 }
-.cooqueen .main-box .separator {
+.cooqueen .recipe-main-box .separator {
   background-image: url("../../assets/images/bground/motif-primary.jpg");
   background-repeat: repeat-x;
   height: 40px;
 }
-.cooqueen .main-box .recipe-title {
+.cooqueen .recipe-main-box .recipe-title {
   font-family: "Bebas Neue", cursive;
   font-size: 2rem;
   color: #a3c0ae;
 }
-.cooqueen .main-box .recipe-info {
+.cooqueen .recipe-main-box .recipe-info {
   font-size: 0.85rem;
 }
-.cooqueen .main-box .ingredients-box {
+.cooqueen .recipe-main-box .ingredients-box {
   background: #e6ebe8;
 }
-.cooqueen .main-box .ingredients-box h4 {
+.cooqueen .recipe-main-box .ingredients-box h4 {
   color: #a3c0ae;
   font-family: "Bebas Neue", cursive;
   font-size: 1.25rem;
 }
-.cooqueen .main-box .ingredients-box .ingredients span {
+.cooqueen .recipe-main-box .ingredients-box .ingredients span {
   display: block;
   margin-bottom: 0.75rem;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 0.8rem;
 }
-.cooqueen .main-box .ingredients-box .ingredients ul {
+.cooqueen .recipe-main-box .ingredients-box .ingredients ul {
   list-style: none;
   column-count: 2;
 }
-.cooqueen .main-box .ingredients-box .ingredients ul li {
+.cooqueen .recipe-main-box .ingredients-box .ingredients ul li {
   display: block;
   text-transform: uppercase;
   font-size: 0.7rem;
 }
-.cooqueen .main-box .ingredients-box .ingredients ul li:before {
+.cooqueen .recipe-main-box .ingredients-box .ingredients ul li:before {
   position: relative;
   top: -2px;
   content: " - ";
 }
-.cooqueen .main-box .elaboration-box p {
+.cooqueen .recipe-main-box .elaboration-box p {
   font-size: 0.8rem;
   text-align: justify;
   margin-bottom: 0.75rem;
 }
-.cooqueen .main-box .elaboration-box p span {
+.cooqueen .recipe-main-box .elaboration-box p span {
   font-size: 0.9rem;
   font-weight: bold;
   color: #f0aa91;
