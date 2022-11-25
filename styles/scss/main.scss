@@ -38,6 +38,9 @@ body {
 }
 
 .cooqueen {
+    &#mainRecipes {
+        display: none;
+    }
     header {
         .lab-nav {
             background-image: url('../../assets/images/bground/motif-primary.jpg');
@@ -214,6 +217,9 @@ body {
         button {
             background-color: $primary-color !important;
             border: 1px solid #fff;
+        }
+        .bi-eye-slash:before {
+            content: "\f340";
         }
     }
 

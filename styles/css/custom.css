@@ -25,6 +25,9 @@ body a:hover {
   color: #3a3231;
 }
 
+.cooqueen#mainRecipes {
+  display: none;
+}
 .cooqueen header .lab-nav {
   background-image: url("../../assets/images/bground/motif-primary.jpg");
   background-repeat: repeat-x;
@@ -189,6 +192,9 @@ body a:hover {
 .cooqueen #loginForm button {
   background-color: #f4bdaa !important;
   border: 1px solid #fff;
+}
+.cooqueen #loginForm .bi-eye-slash:before {
+  content: "\f340";
 }
 .cooqueen footer {
   height: 50px;
