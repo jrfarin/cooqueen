@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <title>CooQueen Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/css/custom.css">
+</head>
+
+<body class="lab-light">
+    <div class="container-fluid cooqueen" id="allRecipes">
+        <header>
+            <div class="row lab-nav lh-1 d-flex justify-content-between">
+                <div class="col-12 d-flex justify-content-between align-items-center">
+                    <!-- LOGIN -->
+                    <div class="d-flex align-items-center ps-4" id="login">
+                        <a href="./admin.html" class="btn btn-cooqueen d-flex align-items-center" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#fff" class="bi bi-door-open" viewBox="0 0 16 16">
+                                <path d="M8.5 10c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z"/>
+                                <path d="M10.828.122A.5.5 0 0 1 11 .5V1h.5A1.5 1.5 0 0 1 13 2.5V15h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117zM11.5 2H11v13h1V2.5a.5.5 0 0 0-.5-.5zM4 1.934V15h6V1.077l-6 .857z"/>
+                            </svg>
+                            <span class="fs-6 fw-bold text-white ps-2">ADMIN</span>
+                        </a>                       
+                    </div>
+                    <!-- LOGOUT -->
+                    <div class="d-flex align-items-center pe-4" id="logout">
+                        <button class="btn btn-cooqueen d-flex align-items-center" type="button">
+                            <span class="fs-6 fw-bold text-white pe-2">LOGOUT</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#fff" class="bi bi-door-closed" viewBox="0 0 16 16">
+                                <path d="M3 2a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v13h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V2zm1 13h8V2H4v13z"></path>
+                                <path d="M9 9a1 1 0 1 0 2 0 1 1 0 0 0-2 0z"></path>
+                            </svg>
+                        </button>             
+                    </div>                                  
+                </div>                           
+            </div>
+            <div class="row">
+                <a href="./home.html">
+                    <div class="col-12 d-flex justify-content-center">
+                        <img src="./assets/images/logo-grey.JPG" alt="logo" class="img-fluid">
+                    </div>
+                    <div class="col-12">
+                        <h1 class="title text-center lh-1 mb-3">COOQUEEN</h1>
+                        <h2 class="desc text-center text-uppercase ps-3 mb-4">Food & Family Recipes</h2>
+                    </div>
+                </a>             
+            </div>
+            <nav class="navbar navbar-expand-sm main-nav d-flex justify-content-center">
+                <ul class="list-unstyled list-inline" id="mainNavList">
+                    <li class="list-inline-item active"><a href="/" class="text-uppercase">Todas las recetas</a></li>
+                    <li class="list-inline-item"><a href="./recipe.html" class="text-uppercase">Aperitivos</a></li>
+                    <li class="list-inline-item"><a href="/" class="text-uppercase">Entrantes</a></li>
+                    <li class="list-inline-item"><a href="/" class="text-uppercase">Platos</a></li>
+                    <li class="list-inline-item"><a href="/" class="text-uppercase">Postres</a></li>
+                    <li class="list-inline-item"><a href="/" class="text-uppercase">Otros</a></li>
+                    <li class="list-inline-item">
+                        <a href="/" class="text-uppercase" title="Search">
+                            <svg width="25" height="25" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m23.836 22.575-6.047-6.047a.556.556 0 0 0-.398-.164h-.483A9.707 9.707 0 0 0 19.5 9.75 9.749 9.749 0 0 0 9.75 0 9.749 9.749 0 0 0 0 9.75a9.749 9.749 0 0 0 16.364 7.163v.478c0 .15.061.29.164.398l6.047 6.047c.22.22.577.22.797 0l.464-.464a.563.563 0 0 0 0-.797zM9.75 18C5.19 18 1.5 14.31 1.5 9.75c0-4.56 3.69-8.25 8.25-8.25C14.31 1.5 18 5.19 18 9.75 18 14.31 14.31 18 9.75 18z" fill="#f0aa91"/><mask id="a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="25"><path fill-rule="evenodd" clip-rule="evenodd" d="m23.836 22.575-6.047-6.047a.556.556 0 0 0-.398-.164h-.483A9.707 9.707 0 0 0 19.5 9.75 9.749 9.749 0 0 0 9.75 0 9.749 9.749 0 0 0 0 9.75a9.749 9.749 0 0 0 16.364 7.163v.478c0 .15.061.29.164.398l6.047 6.047c.22.22.577.22.797 0l.464-.464a.563.563 0 0 0 0-.797zM9.75 18C5.19 18 1.5 14.31 1.5 9.75c0-4.56 3.69-8.25 8.25-8.25C14.31 1.5 18 5.19 18 9.75 18 14.31 14.31 18 9.75 18z" fill="#fff"/></mask></svg>                    
+                            <span class="px-2">Search</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main class="wrapper mx-auto">          
+            <div class="masonry">
+                <div class="brick">
+                    <a href="/" class="d-block position-relative">
+                        <picture>
+                            <source srcset="./assets/images/cherry-plant.webp" type="image/webp">
+                            <img src="./assets/images/cherry-plant.jpg" class="img-fluid" alt="Cherry plant">
+                        </picture>
+                        <div class="backside">
+                            <h2 class="text-center text-white text-uppercase fw-bold">Entrantes</h2>
+                            <span class="text-center text-white fw-bold">Cherry Plant</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="brick">
+                    <a href="/" class="d-block position-relative">
+                        <img src="./assets/images/oranges-pomegranates.jpg" class="img-fluid" alt="Oranges and Pomegranates">
+                        <div class="backside">
+                            <span class="text-center text-white fs-1 fw-bold">Oranges and Pomegranates</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="brick">
+                    <a href="/" class="d-block position-relative">
+                        <img src="./assets/images/strawberry.jpg" class="img-fluid" alt="Strawberry">
+                        <div class="backside">
+                            <span class="text-center text-white fs-1 fw-bold">Strawberry</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="brick">
+                    <a href="/" class="d-block position-relative">
+                        <img src="./assets/images/blueberries.jpg" class="img-fluid" alt="Blueberries">
+                        <div class="backside">
+                            <span class="text-center text-white fs-1 fw-bold">Blueberries</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="brick">
+                    <a href="/" class="d-block position-relative">
+                        <img src="./assets/images/pears.jpg" class="img-fluid" alt="Pears">
+                        <div class="backside">
+                            <span class="text-center text-white fs-1 fw-bold">Pears</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="brick">
+                    <a href="/" class="d-block position-relative">
+                        <img src="./assets/images/easter-eggs.jpg" class="img-fluid" alt="Easter-eggs">
+                        <div class="backside">
+                            <span class="text-center text-white fs-1 fw-bold">Easter-eggs</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="brick">
+                    <a href="/" class="d-block position-relative">
+                        <img src="./assets/images/lemons.jpg" class="img-fluid" alt="Lemons">
+                        <div class="backside">
+                            <span class="text-center text-white fs-1 fw-bold">Lemons</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="brick">
+                    <a href="/" class="d-block position-relative">
+                        <img src="./assets/images/cherries.jpg" class="img-fluid" alt="Cherries">
+                        <div class="backside">
+                            <span class="text-center text-white fs-1 fw-bold">Cherries</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="brick">
+                    <a href="/" class="d-block position-relative">
+                        <img src="./assets/images/grapes.jpg" class="img-fluid" alt="Grapes">
+                        <div class="backside">
+                            <span class="text-center text-white fs-1 fw-bold">Grapes</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <footer class="d-flex justify-content-center align-items-center">
+            <span>&copy</span>
+            <span class="year pe-2"></span>
+            <span class="brand">COOQUEEN</span>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+
+    <script src="./js/app.js"></script>
+    <script type="module" src="./js/firebase.js"></script>
+
+</body>
+</html>
+

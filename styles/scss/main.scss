@@ -9,6 +9,15 @@ $fs-07: .7rem;
 $fs-08: .8rem;
 $fs-09: .9rem;
 
+
+::-webkit-input-placeholder,
+input[placeholder],
+[placeholder],
+*[placeholder] {
+    font-size: $fs-07;
+    color: #717171;
+}
+
 body {
     color: $text-color;
     font-family: 'Montserrat', sans-serif;
@@ -21,6 +30,9 @@ body {
         transition: all .25s ease-in-out;
         &:before {
             transition: all .3s ease-in-out;
+        }
+        &:hover {
+            color: $text-color;
         }
     }
 }
@@ -61,6 +73,7 @@ body {
             margin-top: -1.5rem;
             font-size: .65rem;
             letter-spacing: 5px;
+            color: $text-color;
         }
         .main-nav {
             .list-inline-item {
@@ -190,6 +203,22 @@ body {
             }
         }
     }
+
+    .display-5 {
+        font-family: 'Bebas Neue', cursive;
+        color: $enhanced-color;
+    }
+    #loginForm {
+        border: 1px solid #ededed;
+        border-radius: 5px;
+        button {
+            background-color: $primary-color !important;
+            border: 1px solid #fff;
+        }
+    }
+
+
+    
     footer {
         height: 50px;
         background-image: url('../../assets/images/bground/motif-primary.jpg');

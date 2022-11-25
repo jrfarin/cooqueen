@@ -1,3 +1,4 @@
+// MENU CLASS ACTIVE
 const mainMenu = document.getElementById('mainNavList');
 const listItems = mainMenu.getElementsByClassName("list-inline-item");
 
@@ -9,9 +10,8 @@ for (let i = 0; i < listItems.length; i++) {
     });
 }
 
-
-// TOKEN VSCODE SYNC
-// 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
+// DATE
 let date =  new Date().getFullYear();
 const year = document.querySelector('.year');
 year.innerText = date;
+
